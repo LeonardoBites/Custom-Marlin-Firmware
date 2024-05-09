@@ -69,7 +69,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(none, default config)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(leonardobites, Tevo Tarantula Pro)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -87,7 +87,7 @@
 #define SHOW_BOOTSCREEN
 
 // Show the bitmap in Marlin/_Bootscreen.h on startup.
-//#define SHOW_CUSTOM_BOOTSCREEN
+#define SHOW_CUSTOM_BOOTSCREEN
 
 // Show the bitmap in Marlin/_Statusscreen.h on the status screen.
 //#define CUSTOM_STATUS_SCREEN_IMAGE
@@ -143,7 +143,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Tarantula Test 3D"
+#define CUSTOM_MACHINE_NAME "Tarantula Pro"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -1855,17 +1855,27 @@
 //
 // Preheat Constants - Up to 5 are supported without changes
 //
+// #define PREHEAT_1_LABEL       "PLA"
+// #define PREHEAT_1_TEMP_HOTEND 200
+// #define PREHEAT_1_TEMP_BED     60
+// #define PREHEAT_1_TEMP_CHAMBER 35
+// #define PREHEAT_1_FAN_SPEED   255 // Value from 0 to 255
+
+// #define PREHEAT_2_LABEL       "PETG"
+// #define PREHEAT_2_TEMP_HOTEND 230
+// #define PREHEAT_2_TEMP_BED    80
+// #define PREHEAT_2_TEMP_CHAMBER 35
+// #define PREHEAT_2_FAN_SPEED   128 // Value from 0 to 255
+
 #define PREHEAT_1_LABEL       "PLA"
 #define PREHEAT_1_TEMP_HOTEND 200
-#define PREHEAT_1_TEMP_BED     60
-#define PREHEAT_1_TEMP_CHAMBER 35
-#define PREHEAT_1_FAN_SPEED   255 // Value from 0 to 255
+#define PREHEAT_1_TEMP_BED     70
+#define PREHEAT_1_FAN_SPEED   0 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "PETG"
-#define PREHEAT_2_TEMP_HOTEND 230
+#define PREHEAT_2_TEMP_HOTEND 240
 #define PREHEAT_2_TEMP_BED    80
-#define PREHEAT_2_TEMP_CHAMBER 35
-#define PREHEAT_2_FAN_SPEED   128 // Value from 0 to 255
+#define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
 /**
  * Nozzle Park
